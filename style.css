@@ -36,7 +36,7 @@ h1 {
 }
 
 .masked {
-    background: url(./trialimage.png) repeat, black;
+    background: url(./images/trialimage.png) repeat, black;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-animation-name: masked-animation;
