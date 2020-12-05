@@ -1,65 +1,37 @@
-.first {
-    height: 100vh;
-    background-color: #141821;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.tagline {
-    color: white;
-}
-
-h1 {
-    font-weight: 500;
-}
-
-
-/* animation of the tagline */
-
-#home {
+.first {
     height: 100vh;
+    margin-top: -25px;
+    background-color: black;
+}
+
+.first h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
     padding-top: 200px;
-    padding-bottom: 100px;
-    margin: auto;
-}
-
-#home h1 {
-    text-decoration: none;
-    font-size: 5vw;
-    font-weight: 750;
-    text-align: left;
-    padding-left: 75px;
-    text-shadow: rgba(0, 0, 0, 0.75);
-}
-
-.masked {
-    background: url(./images/trialimage.png) repeat, black;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-animation-name: masked-animation;
-    -webkit-animation-duration: 50s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-}
-
-@-webkit-keyframes masked-animation {
-    0% {
-        background-position: left bottom;
-    }
-    100% {
-        background-position: right bottom;
-    }
+    padding-left: 100px;
 }
 
 
-/* animation of the tagline ends here */
+/* animation for the loader*/
+
+
+/* animation of the loader ends here*/
 
 .second h1,
 .third h1 {
     color: black;
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
 }
 
 .second {
@@ -70,4 +42,32 @@ h1 {
 .third {
     height: 100vh;
     background-color: yellow;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navbar css*/
+
+.bg-custom {
+    background-color: black;
+}
+
+.nav-link-custom {
+    color: white;
+    padding: 20px;
+}
+
+#navbarNav {
+    float: right;
+}
+
+.nav-link-custom:hover {
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    transition: 0.6ms ease-in;
+    text-decoration: none;
 }
