@@ -11,12 +11,11 @@ body {
     background-color: black;
 }
 
-.first h1 {
-    color: white;
-    font-weight: 500;
-    font-size: 50px;
-    padding-top: 200px;
-    padding-left: 100px;
+.tagline {
+    z-index: 100;
+    top: 35%;
+    left: 15%;
+    position: absolute;
 }
 
 
@@ -28,7 +27,7 @@ body {
 .second h1,
 .third h1 {
     color: black;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 50px;
     padding-top: 50px;
     padding-left: 100px;
@@ -58,6 +57,7 @@ html {
 .nav-link-custom {
     color: white;
     padding: 20px;
+    font-size: 20px;
 }
 
 #navbarNav {
