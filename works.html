@@ -10,14 +10,35 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="./style.css">
+    <style>
+        canvas {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            z-index: 0;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+        var circle=null; var canvas=document.getElementById("myCanvas"); canvas.addEventListener("click",function(event) { var point = new Point(event.x, event.y); var r=Math.floor(Math.random()*255); var g=Math.floor(Math.random()*255); var b=Math.floor(Math.random()*255);
+        circle = new Path.Circle(point, 500); circle.fillColor = "rgb(" + r +","+g+","+b+")"; }); function onFrame(event) { if(circle) { if(circle.area
+        <10000000) circle.scale(1.1); circle.fillColor.hue +=1 ; } } $(function() { $( 'a[href*=#]').on( 'click', function(e) { e.preventDefault(); $( 'html, body').animate({ scrollTop: $($(this).attr( 'href')).offset().top}, 500, 'linear'); }); });</script>
+            <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-custom" style="padding-top: 20px;">
         <a class="navbar-brand" href="./index.html">
-            <img src="./images/white text.png" width="240" height="40" alt="" style="padding-left: 20px;">
+            <img src="./images/white text.png" width="240" height="35" alt="" style="padding-left: 40px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,6 +47,31 @@
 
         </div>
     </nav>
+
+
+    <div class="worksdisplay">
+        <div class="worksec1">
+            <h1 class="works">Works</h1>
+            <section id="section07" class="demo">
+
+                <a href="#worksec2"><span></span><span></span><span></span></a>
+            </section>
+
+
+
+        </div>
+        <div id="worksec2" class="worksec2">
+            <canvas id="myCanvas" resize>
+               
+       
+       
+            
+            </canvas>
+        </div>
+
+    </div>
+
+
 </body>
 
 </html>
