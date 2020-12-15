@@ -31,15 +31,19 @@ body {
 .tagline {
   font-family: "Manrope";
   z-index: 100;
-  top: 30%;
+  top: 15%;
   left: 6%;
   position: relative;
   color: white;
-  font-size: 6vw;
+  font-size: 4vw;
   font-weight: 600;
   color: #0ba1fd;
+  transition-duration: 1s;
 }
-
+.design-image{
+  position: relative;
+  z-index: 45
+}
 .works {
   z-index: 100;
   top: 40%;
@@ -49,10 +53,12 @@ body {
   font-size: 10vw;
   font-weight: 800;
 }
-
+.works-content{
+  
+}
 .worksdisplay {
   height: 200vh;
-  background-color: #0a0a0a;
+  /*background-color: #0a0a0a;*/
 }
 
 .worksec1 {
@@ -62,7 +68,21 @@ body {
 
 .worksec2 {
 }
-
+#worksList{
+  position: relative;
+  text-align: center;
+  list-style-type:none;
+  margin-top: -45% ;
+  width:auto ; 
+  z-index: 20;
+}
+#worksList li{
+  margin-bottom: 5%;
+  margin-left: -10%;
+  font-size: 4em;
+  color: white;
+  transition-duration: 0.7s;
+}
 .rectangle {
   z-index: -100;
   height: 100vh;
@@ -188,7 +208,6 @@ section::after {
 #section07 a {
   padding-top: 110px;
 }
-
 #section07 a span {
   position: absolute;
   top: 0;
