@@ -66,6 +66,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -30px;
+    background-color: #0a0a0a;
 }
 
 .works {
@@ -78,8 +79,6 @@ body {
     font-weight: 800;
 }
 
-.works-content {}
-
 .worksdisplay {
     height: 200vh;
     /*background-color: #0a0a0a;*/
@@ -89,8 +88,6 @@ body {
     height: 100vh;
     margin-top: -150px;
 }
-
-.worksec2 {}
 
 #worksList {
     position: relative;
@@ -199,7 +196,7 @@ li>a:hover:after {
 }
 
 .active {
-    color: #fbc02d !important;
+    color: #fff !important;
 }
 
 
