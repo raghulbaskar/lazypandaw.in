@@ -5,18 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazypandaw</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="./images/lazypandaw-01.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <style>
         #myCanvas {
             width: 100%;
@@ -27,7 +20,7 @@
             left: 0;
             z-index: 15;
         }
-
+        
         #myCanvas2 {
             width: 100%;
             height: 100%;
@@ -35,7 +28,7 @@
             margin: 0;
             z-index: 15;
         }
-
+        
         html,
         body {
             height: 100%;
@@ -47,49 +40,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
     <script type="text/paperscript" canvas="myCanvas">
-        var circle = null, circle2=null;
-        var color_array = ["#32a852", "#21edc1", "#215eed", "#c91eb8"], i=0;
-        var scope = new paper.PaperScope();
-        var scope2 = new paper.PaperScope();
-        var canvas = document.getElementById("myCanvas");
-        scope.setup(canvas);
-        var canvas2 = document.getElementById("myCanvas2");
-        scope2.setup(canvas2);
-        function circleSplash(event) {
-            var point = new Point(event.x, event.y);
-            if (i == color_array.length)
-                i = 0;
-            scope.activate();
-            circle = new scope.Path.Circle(point, 500); 
-            circle.fillColor = color_array[i];
-            scope2.activate();
-            circle2 = new scope2.Path.Circle(point, 500); 
-            circle2.fillColor = color_array[i];
-            i++;
-        }
-        canvas.addEventListener("click", circleSplash); 
-        canvas2.addEventListener("click",circleSplash); 
-        circleSplash({x:0,y:0});
-        function onFrame(event) {
-            scope.activate();
-            if (circle) {
-                if (circle.area<10000000) circle.scale(1.1);
-            }
-            scope2.activate();
-            if (circle2) {
-                if (circle2.area<10000000) circle2.scale(1.1);
-            }
-        }
-        $(function () {
-            $('a[href*="#"]').on('click', function (e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $($(this).attr('href')).offset().top
-                }, 500, 'linear');
-            });
-        });
-    </script>
-    <link rel="stylesheet" href="./style.css">
+        var circle = null, circle2=null; var color_array = ["#32a852", "#21edc1", "#215eed", "#c91eb8"], i=0; var scope = new paper.PaperScope(); var scope2 = new paper.PaperScope(); var canvas = document.getElementById("myCanvas"); scope.setup(canvas); var canvas2
+        = document.getElementById("myCanvas2"); scope2.setup(canvas2); function circleSplash(event) { var point = new Point(event.x, event.y); if (i == color_array.length) i = 0; scope.activate(); circle = new scope.Path.Circle(point, 500); circle.fillColor
+        = color_array[i]; scope2.activate(); circle2 = new scope2.Path.Circle(point, 500); circle2.fillColor = color_array[i]; i++; } canvas.addEventListener("click", circleSplash); canvas2.addEventListener("click",circleSplash); circleSplash({x:0,y:0});
+        function onFrame(event) { scope.activate(); if (circle) { if (circle.area
+        <10000000) circle.scale(1.1); } scope2.activate(); if (circle2) { if (circle2.area<10000000) circle2.scale(1.1); } } $(function () { $( 'a[href*="#"]').on(
+            'click', function (e) { e.preventDefault(); $( 'html, body').animate({ scrollTop: $($(this).attr( 'href')).offset().top }, 500, 'linear'); }); }); </script>
+            <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -99,8 +56,7 @@
         <a class="navbar-brand" href="./index.html">
             <img src="./images/white text.png" width="240" height="35" alt="" style="padding-left: 40px;">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -112,7 +68,7 @@
         <h1 class="works">Works.</h1>
         <section id="section07" class="demo">
 
-            <a style="z-index: 15;" href="#worksec2"><span></span><span></span><span></span></a>
+            <a style="z-index: 15;" href="#mycanvas2"><span></span><span></span><span></span></a>
         </section>
 
 
@@ -129,22 +85,22 @@
     </div>
     <script>
         var listElements = document.querySelectorAll("#worksList li");
+
         function changeItemsColour(elementText, selected = false) {
             if (selected) {
                 listElements.forEach(li => {
                     if (li.innerHTML != elementText)
                         li.setAttribute("style", "color: #b8b8b8;");
                 });
-            }
-            else{
+            } else {
                 listElements.forEach(li => li.setAttribute("style", "color: #FFFFFF;"));
             }
         }
         listElements.forEach(li => {
             li.addEventListener("mouseenter", event => {
-                changeItemsColour(li.innerHTML,true)
+                changeItemsColour(li.innerHTML, true)
             });
-            li.addEventListener("mouseleave",event=>{
+            li.addEventListener("mouseleave", event => {
                 changeItemsColour(li.innerHTML)
             })
         })
