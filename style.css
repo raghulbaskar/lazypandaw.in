@@ -39,7 +39,7 @@ body {
     font-family: "Manrope";
     z-index: 100;
     top: 6%;
-    left: 6%;
+    left: 3%;
     position: relative;
     color: white;
     font-weight: 600;
@@ -172,7 +172,7 @@ html {
 }
 
 ul a:hover {
-    color: #fbc02d !important;
+    color: #fff !important;
     text-decoration: none;
 }
 
@@ -185,7 +185,7 @@ li>a:after {
     content: "";
     display: block;
     height: 1.5px;
-    background: #fbc02d;
+    background: #fff;
     transform: scaleX(0);
     transition: transform 0.3s;
     text-decoration: none;
