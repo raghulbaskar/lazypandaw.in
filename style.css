@@ -22,6 +22,10 @@ body {
   }
 }
 
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
 .first {
   height: 96vh;
   margin-top: -25px;
@@ -35,14 +39,23 @@ body {
   left: 6%;
   position: relative;
   color: white;
-  font-size: 4vw;
   font-weight: 600;
   color: #0ba1fd;
   transition-duration: 1s;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-align: left;
 }
 .design-image{
   position: relative;
-  z-index: 45
+  z-index: 45;
+  height: 80%;
+    width: 180%;
+    right: 480px;
+    bottom: 100px;
+    transform: rotate(4deg);
+
+    
 }
 .works {
   z-index: 100;
@@ -88,7 +101,9 @@ body {
   height: 100vh;
   width: auto;
 }
-
+.second{
+  background-color: white;
+}
 /* animation for the loader*/
 
 /* animation of the loader ends here*/
