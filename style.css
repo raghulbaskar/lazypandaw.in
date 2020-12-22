@@ -292,6 +292,9 @@ section::after {
     }
     .tagline {
         margin-top: -70px;
-        left: 0%;
+        left: 4%;
+        font-size: 87px;
+        
+
     }
 }
