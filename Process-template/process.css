@@ -1,0 +1,22 @@
+body{
+  text-align: center;
+  position: relative;
+}
+ul,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content{
+  margin:1vw auto 20vw;
+  width:60.5%;
+}
+.columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.columns li{
+  width: 100%;
+}
