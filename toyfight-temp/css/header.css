@@ -1038,7 +1038,7 @@ header[data-state="project"] .intro-figures, header[data-state="project"] .who-f
 
 
 .intro-figures .figures {
-  background-image: url("../img/figures/intro-figures.png")}
+  background-image: url()}
 
 .who-figures .figures {
   background-image: url("../img/figures/who-figures.png")}
@@ -1053,7 +1053,7 @@ header[data-state="project"] .intro-figures, header[data-state="project"] .who-f
 
 @media (min-width: 767px) {
   .intro-figures .figures {
-    background-image: url("../img/figures/intro-figures.png")}
+    background-image: url()}
 
   .who-figures .figures {
     background-image: url("../img/figures/who-figures.png")}
