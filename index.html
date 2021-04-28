@@ -5,18 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazypandaw</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="./images/lazypandaw-01.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <style>
         canvas {
             width: 100%;
@@ -24,7 +17,7 @@
             margin: 0;
             z-index: 0;
         }
-
+        
         html,
         body {
             height: 100%;
@@ -39,41 +32,56 @@
         var color_array = ["#32a852", "#21edc1", "#215eed", "#c91eb8"]; var i=0; var circle=null; var canvas=document.getElementById("myCanvas"); canvas.addEventListener("click",function(event) { var point = new Point(event.x, event.y); circle = new Path.Circle(point,
         500); if (i == color_array.length) i = 0; circle.fillColor = color_array[i]; i++; }); function onFrame(event) { if(circle) { if(circle.area
         <10000000) circle.scale(1.1); } } </script>
-    <link rel="stylesheet" href="./style.css">
+            <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="homebg">
+    <div class="homebg" style="background: #6663c8;margin-bottom:-20px">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-custom" style="padding-top: 20px;">
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom" style="padding-top: 20px;background-color: #6663c8;">
             <a class="navbar-brand" href="./index.html">
-                <img src="./images/white text.png" width="240" height="35" alt="" style="padding-left: 20px;">
+                <img src="./images/lazypandaw-01.png" width="140" height="100" alt="" style="padding-left: 3vw;margin-top: -27.5px">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto" style="padding-right: 100px;">
+                <ul class="navbar-nav navbar-center" style="padding-right: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link-custom" href="./works.html"><span class="sr-only">(current)</span></a>
+                        <a class="nav-link-custom" href="./works.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-custom" href="./works.html">Works<span class="sr-only">(current)</span></a>
+                        <a class="nav-link-custom" href="./works.html">Who<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-custom" href="./pandahouse.html">Pandahouse</a>
+                        <a class="nav-link-custom" href="./pandahouse.html">What</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-custom" href="./contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link-custom" href="./contact.html">About Us</a>
+                        <a class="nav-link-custom" href="./contact.html">Work</a>
                     </li>
 
+
+                </ul>
+                <ul class="navbar-nav ml-auto lastitem" style="margin-right: 10px;">
+                    <li class="nav-item">
+                        <a class="nav-link-custom justify-content-end" href="./contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </nav>
+
+
+
+        <h1 class="h1 tagline d-flex justify-content-center text-center" style="z-index: 100;font-size: 7vw;justify-content: center;">Lazypandaw<br>
+        </h1>
+        <!--h3 class="d-flex justify-content-center" style="font-size:3vw;padding-top: 70px;">Lazy yet punctual</h3-->
+        <div class="backdrop">
+            <img src="./images/Saly-10.png" alt="" class="bgimages" />
+            <img src="./images/Saly-19.png" class="bgimages1">
+        </div>
 
 
 
@@ -83,8 +91,6 @@
 
 
 
-        <h1 class="h1 tagline">We dont just Design <br> We solve
-        </h1>
 
     </div>
 
