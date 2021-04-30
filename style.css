@@ -7,8 +7,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Century Gothic";
+    src: url("./fonts/CenturyGothic.ttf");
+}
+
 body {
-    font-family: "Manrope", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -23,6 +28,22 @@ body {
     .bgimages1 {
         visibility: hidden;
     }
+    .navbar-brand {
+        padding-top: 20px;
+    }
+    .sideimages {
+        visibility: hidden;
+    }
+    .maindiv {
+        visibility: hidden;
+    }
+    .subdiv {
+        visibility: visible;
+    }
+}
+
+.subdiv {
+    visibility: hidden;
 }
 
 .backdrop {
@@ -56,7 +77,7 @@ body {
 
 .tagline {
     padding-top: 5rem;
-    font-family: "Manrope";
+    letter-spacing: 0.4px;
     z-index: 100;
     top: 6%;
     position: relative;
@@ -79,10 +100,11 @@ body {
 }
 
 .homebg {
-    height: 100vh;
+    height: 105vh;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -30px;
+    background-size: auto;
+    background-position-y: -90px;
+    background-color: #6663c8;
 }
 
 .works {
