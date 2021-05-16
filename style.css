@@ -65,6 +65,14 @@ body {
     margin-right: -30px;
 }
 
+/* .bgimages2 {
+    height: 200px;
+    width: auto;
+    margin-top: 80px;
+    margin-left: -200px;
+    align-items: center;
+} */
+
 .navbar-center {
     position: absolute;
     left: 50%;
