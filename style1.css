@@ -10,7 +10,8 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.wrapper {
+.wrapper,
+.blah {
   height: 100%;
   width: 100%;
   left: 0;
@@ -20,15 +21,11 @@ body {
   position: absolute;
   background: linear-gradient(
     124deg,
-    #ff2400,
-    #e81d1d,
-    #e8b71d,
-    #e3e81d,
-    #1de840,
-    #1ddde8,
-    #2b1de8,
-    #dd00f3,
-    #dd00f3
+    #e3d1b0,
+    #6663c8,
+    #4db2ec,
+    #40b984,
+    #e1bd47
   );
   background-size: 1800% 1800%;
 
@@ -194,4 +191,9 @@ li > a:hover:after {
   .subdiv {
     visibility: visible;
   }
+}
+.blah {
+  position: absolute;
+  top: 200%;
+  z-index: -50;
 }
