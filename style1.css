@@ -177,7 +177,7 @@ li > a:hover:after {
   .lastitem,
   .bgimages,
   .bgimages1 {
-    visibility: hidden;
+    display: none;
   }
   .navbar-brand {
     padding-top: 20px;
