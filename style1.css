@@ -1,87 +1,84 @@
 body {
-  font-family: "Century Gothic", sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: "Century Gothic", sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .wrapper,
 .blah {
-  height: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  padding: 0px;
-  position: absolute;
-  background: linear-gradient(
-    124deg,
-    #e3d1b0,
-    #6663c8,
-    #4db2ec,
-    #40b984,
-    #e1bd47,
-    #d56037
-  );
-  background-size: 1800% 1800%;
-
-  -webkit-animation: rainbow 30s ease infinite;
-  -z-animation: rainbow 30s ease infinite;
-  -o-animation: rainbow 30s ease infinite;
-  animation: rainbow 30s ease infinite;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0px;
+    position: absolute;
+    background: linear-gradient( 124deg, #e3d1b0, #6663c8, #4db2ec, #40b984, #e1bd47, #d56037);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 30s ease infinite;
+    -z-animation: rainbow 30s ease infinite;
+    -o-animation: rainbow 30s ease infinite;
+    animation: rainbow 30s ease infinite;
 }
 
 @-webkit-keyframes rainbow {
-  0% {
-    background-position: 0% 82%;
-  }
-  50% {
-    background-position: 100% 19%;
-  }
-  100% {
-    background-position: 0% 82%;
-  }
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
 }
+
 @-moz-keyframes rainbow {
-  0% {
-    background-position: 0% 82%;
-  }
-  50% {
-    background-position: 100% 19%;
-  }
-  100% {
-    background-position: 0% 82%;
-  }
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
 }
+
 @-o-keyframes rainbow {
-  0% {
-    background-position: 0% 82%;
-  }
-  50% {
-    background-position: 100% 19%;
-  }
-  100% {
-    background-position: 0% 82%;
-  }
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
 }
+
 @keyframes rainbow {
-  0% {
-    background-position: 0% 82%;
-  }
-  50% {
-    background-position: 100% 19%;
-  }
-  100% {
-    background-position: 0% 82%;
-  }
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
 }
+
+
 /* * {
   background: #000 !important;
   color: #0f0 !important;
@@ -89,108 +86,114 @@ body {
 } */
 
 .homebg {
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .navbar-center {
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 .nav-link-custom {
-  color: white;
-  padding: 20px;
-  font-size: 20px;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
 }
 
 #navbarNav {
-  float: right;
+    float: right;
 }
 
 ul a:hover {
-  color: #fff !important;
-  text-decoration: none;
+    color: #fff !important;
+    text-decoration: none;
 }
 
 nav li {
-  text-align: center;
-  text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-li > a:after {
-  content: "";
-  display: block;
-  height: 1.5px;
-  background: #fff;
-  transform: scaleX(0);
-  transition: transform 0.3s;
-  text-decoration: none;
-  margin-left: 18px;
+li>a:after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    text-decoration: none;
+    margin-left: 18px;
 }
 
-li > a:hover:after {
-  transform: scaleX(0.8);
-  transition: transform 0.3s;
-  text-decoration: none;
+li>a:hover:after {
+    transform: scaleX(0.8);
+    transition: transform 0.3s;
+    text-decoration: none;
 }
 
 .active {
-  color: #fff !important;
+    color: #fff !important;
 }
+
 .bgimages1 {
-  height: 30rem;
-  width: auto;
-  position: absolute;
-  bottom: 0;
+    height: 30rem;
+    width: auto;
+    position: absolute;
+    bottom: 0;
 }
+
 .second {
-  height: 100vh;
-  width: auto;
-  background-repeat: no-repeat;
-  background-size: auto;
+    height: 100vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
+
 .bgimages2 {
-  height: 8rem;
-  width: auto;
-  position: absolute;
-  bottom: 7rem;
-  left: 50rem;
+    height: 8rem;
+    width: auto;
+    position: absolute;
+    bottom: 7rem;
+    left: 50rem;
 }
 
 .bgimages {
-  height: 27rem;
-  width: auto;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+    height: 27rem;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
+
 #heading {
-  text-align: center;
-  color: white;
-
-  width: auto;
-  position: absolute; /* or absolute */
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: auto;
+    position: absolute;
+    /* or absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 #pandaw {
-  font-size: 4rem;
-  font-weight: 500;
-  letter-spacing: 0.4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
 }
+
 #agency {
-  font-weight: 300;
-  font-size: 2rem;
+    font-weight: 300;
+    font-size: 2rem;
 }
 
 @media (min-width: 1281px) {
-  /* CSS */
+    /* CSS */
 }
+
 
 /* 
   ##Device = Laptops, Desktops
@@ -198,8 +201,9 @@ li > a:hover:after {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  /* CSS */
+    /* CSS */
 }
+
 
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -207,8 +211,43 @@ li > a:hover:after {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
+    /* CSS */
+    .navbar-center {
+        position: absolute;
+        color: black;
+        background-color: white;
+        border-radius: 20px;
+        padding-top: 25px;
+    }
+    .nav-link-custom {
+        color: black;
+    }
+    #pandaw {
+        font-size: 2.5rem;
+    }
+    #agency {
+        font-size: 1rem;
+    }
+    .lastitem,
+    .bgimages,
+    .bgimages1,
+    .bgimages2 {
+        display: none;
+    }
+    .navbar-brand {
+        padding-top: 20px;
+    }
+    .sideimages {
+        visibility: hidden;
+    }
+    .maindiv {
+        visibility: hidden;
+    }
+    .subdiv {
+        visibility: visible;
+    }
 }
+
 
 /* 
   ##Device = Tablets, Ipads (landscape)
@@ -216,49 +255,60 @@ li > a:hover:after {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* CSS */
+    /* CSS */
 }
+
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */
-  .navbar-center {
-    position: absolute;
-    background-color: black;
-  }
-  #pandaw {
-    font-size: 2.5rem;
-  }
-  #agency {
-    font-size: 1rem;
-  }
-
-  .bgimages,
-  .bgimages1 {
-    height: 300px;
-
-    position: absolute;
-  }
-  .bgimages2 {
-    display: none;
-  }
-  .navbar-brand {
-    padding-top: 20px;
-  }
-  .sideimages {
-    visibility: hidden;
-  }
-  .maindiv {
-    visibility: hidden;
-  }
-  .subdiv {
-    visibility: visible;
-  }
+.navbar-toggler .navbar {
+    outline: none;
+    border: none;
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+    .navbar-center {
+        position: absolute;
+        color: black;
+        background-color: white;
+        border-radius: 20px;
+        padding-top: 25px;
+    }
+    .nav-link-custom {
+        color: black;
+    }
+    #pandaw {
+        font-size: 2.5rem;
+    }
+    #agency {
+        font-size: 1rem;
+    }
+    .bgimages,
+    .bgimages1 {
+        height: 300px;
+        position: absolute;
+    }
+    .bgimages2 {
+        display: none;
+    }
+    .navbar-brand {
+        padding-top: 20px;
+    }
+    .sideimages {
+        visibility: hidden;
+    }
+    .maindiv {
+        visibility: hidden;
+    }
+    .subdiv {
+        visibility: visible;
+    }
+}
+
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -266,38 +316,52 @@ li > a:hover:after {
 */
 
 @media (max-width: 480px) {
-  /* CSS */
-  .navbar-center {
-    position: absolute;
-    background-color: black;
-  }
-  #pandaw {
-    font-size: 2.5rem;
-  }
-  #agency {
-    font-size: 1rem;
-  }
-  .lastitem,
-  .bgimages,
-  .bgimages1,
-  .bgimages2 {
-    display: none;
-  }
-  .navbar-brand {
-    padding-top: 20px;
-  }
-  .sideimages {
-    visibility: hidden;
-  }
-  .maindiv {
-    visibility: hidden;
-  }
-  .subdiv {
-    visibility: visible;
-  }
+    /* CSS */
+    .navbar-center {
+        position: absolute;
+        color: black;
+        background-color: white;
+        border-radius: 20px;
+        padding-top: 25px;
+    }
+    .nav-link-custom {
+        color: black;
+    }
+    #pandaw {
+        font-size: 2.5rem;
+    }
+    #agency {
+        font-size: 1rem;
+    }
+    .lastitem,
+    .bgimages,
+    .bgimages1,
+    .bgimages2 {
+        display: none;
+    }
+    .navbar-brand {
+        padding-top: 20px;
+    }
+    .sideimages {
+        visibility: hidden;
+    }
+    .maindiv {
+        visibility: hidden;
+    }
+    .subdiv {
+        visibility: visible;
+    }
 }
+
 .blah {
-  position: absolute;
-  top: 200%;
-  z-index: -50;
+    position: absolute;
+    top: 200%;
+    z-index: -50;
+}
+
+.second,
+.third {
+    padding-left: 25px;
+    padding-top: 25px;
+    font-weight: 700;
 }
