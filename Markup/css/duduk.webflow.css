@@ -527,7 +527,7 @@ SECTION
   margin-bottom: 0px;
   padding-right: 0px;
   padding-left: 50px;
-  background-color: #f3d940;
+  /* background-color: #f3d940; */
 }
 
 .section.no-bottom-padding {
@@ -543,7 +543,69 @@ SECTION
 }
 
 .section.bgaccent-color {
-  background-color: #f3d940;
+  background: linear-gradient(
+    124deg,
+    #fff,
+    #1010,
+    #98ddca,
+    #ffd3b4,
+    #ffaaa7,
+    #ffc93c,
+    #867ae9,
+    #7868e6
+  );
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 30s ease infinite;
+  -z-animation: rainbow 30s ease infinite;
+  -o-animation: rainbow 30s ease infinite;
+  animation: rainbow 30s ease infinite;
+}
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
 }
 
 .section.bgaccent-color.section-large {
@@ -561,8 +623,71 @@ SECTION
 .section.bgaccent {
   overflow: visible;
   margin-bottom: 0px;
-  background-color: #fbf9f5;
+  background: linear-gradient(
+    124deg,
+    #fff,
+    #1010,
+    #98ddca,
+    #ffd3b4,
+    #ffaaa7,
+    #ffc93c,
+    #867ae9,
+    #7868e6
+  );
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 30s ease infinite;
+  -z-animation: rainbow 30s ease infinite;
+  -o-animation: rainbow 30s ease infinite;
+  animation: rainbow 30s ease infinite;
 }
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
 
 .section.bg-article-1 {
   min-height: 600px;
@@ -1989,9 +2114,74 @@ BUTTON
   height: 100%;
   padding: 30px;
   border-radius: 5px;
-  background-color: #f3d940;
   opacity: 1;
+  background: linear-gradient(
+    124deg,
+    #fff,
+    #1010,
+    #98ddca,
+    #ffd3b4,
+    #ffaaa7,
+    #ffc93c,
+    #867ae9,
+    #7868e6
+  );
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 30s ease infinite;
+  -z-animation: rainbow 30s ease infinite;
+  -o-animation: rainbow 30s ease infinite;
+  animation: rainbow 30s ease infinite;
 }
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+  
+
 
 .social-media-icons-container {
   display: -webkit-box;
@@ -2092,7 +2282,8 @@ BUTTON
 .section-divider {
   position: static;
   width: auto;
-  background-color: #f3d940;
+  /* background-color: #f3d940; */
+  height : 200px;
   text-align: left;
 }
 
@@ -2109,7 +2300,68 @@ BUTTON
 
 .navbg {
   height: 85px;
-  background-color: #f3d940;
+  background: linear-gradient(
+    124deg,
+    #fff,
+    #1010,
+    #98ddca,
+    #ffd3b4,
+    #ffaaa7,
+    #ffc93c
+    
+  );
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 30s ease infinite;
+  -z-animation: rainbow 30s ease infinite;
+  -o-animation: rainbow 30s ease infinite;
+  animation: rainbow 30s ease infinite;
+}
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
 }
 
 .text-area {
