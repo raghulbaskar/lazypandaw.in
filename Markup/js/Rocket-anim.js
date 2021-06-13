@@ -6,9 +6,11 @@ const flightpath={
     ]
 };
 
-var tl = gsap.timeline();
 
-tl.to(".anim",{
+
+ setTimeout(function(){
+   var tl = gsap.timeline();
+   tl.to(".anim",{
     motionPath:{
         // path:[{left:100, top:250}, {left:300, top:0}, {left:500, top:400}],{x:500,y:100},{x:750,y:-100}
         // path:[{x:100,y:-20},{x:300,y:10},{x:500,y:100},{x:750,y:-100},{x:500,y:-50},{x:600,y:20},{x:window.innerWidth,y:-400}],
@@ -33,5 +35,8 @@ tl.to(".anim",{
         // }
       }
 })
+    console.log("from anim");
+    
+},5000);
 
 gsap.registerPlugin(MotionPathPlugin,ScrollTrigger);

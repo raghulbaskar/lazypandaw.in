@@ -86,6 +86,23 @@ a:active,
 a:hover {
   outline: 0;
 }
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
 /* Text-level semantics
    ========================================================================== */
 /**

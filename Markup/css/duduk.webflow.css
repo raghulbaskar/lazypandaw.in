@@ -404,7 +404,18 @@ NAVIGATION
 SECTION
 
 -------------------------------------------------------------------*/
-
+.section-padding{
+  padding-bottom: 50%;
+  height: 100%;
+}
+.background{
+  background-size: cover;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.size-carousel{
+  height: 80vh;
+}
 .section {
   position: relative;
   display: block;
@@ -419,7 +430,33 @@ SECTION
   justify-content: center;
   background-color: transparent;
 }
+.carousel-item{
+  height: 32rem;
+  position: relative;
+}
+.container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 100px;
+}
+.carousel-control-prev{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 200px;
+} 
+.carousel-control-next{
+  position: absolute;
+  /* bottom: 0;
+  left: 0;
+  right: 0; */
+  padding-bottom: 200px;
+} 
 
+/* }
 .section.full-screen {
   display: -webkit-box;
   display: -webkit-flex;
@@ -528,7 +565,7 @@ SECTION
   padding-right: 0px;
   padding-left: 50px;
   /* background-color: #f3d940; */
-}
+
 
 .section.no-bottom-padding {
   padding-bottom: 0px;
